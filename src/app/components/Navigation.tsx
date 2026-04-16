@@ -50,7 +50,7 @@ export const Navigation = () => {
   return (
     <>
       <header className="fixed top-0 left-0 w-full z-40 p-6 flex justify-between items-center mix-blend-difference text-white">
-        <a href="#home" className="block">
+        <a href="#home" aria-label="Go to Home" className="block">
           <CircularText 
             text="YOGIE*ENGINEERING*" 
             radius={28}
@@ -64,6 +64,7 @@ export const Navigation = () => {
             <button className="opacity-40 hover:opacity-100 transition-opacity">ID</button>
           </div>
           <button 
+            aria-label="Open Menu"
             onClick={() => setIsOpen(true)}
             className="group flex items-center justify-center w-12 h-12 rounded-full border border-white/20 hover:border-white/50 transition-colors"
           >
@@ -103,6 +104,7 @@ export const Navigation = () => {
                     <button className="opacity-40 hover:opacity-100 transition-opacity">ID</button>
                   </div>
                   <button 
+                    aria-label="Close Menu"
                     onClick={() => setIsOpen(false)}
                     className="group flex items-center justify-center w-12 h-12 rounded-full border border-white/20 hover:border-white/50 transition-colors bg-white/5"
                   >
@@ -155,7 +157,7 @@ export const Navigation = () => {
                     </div>
                   </div>
                   <div className="mt-6 text-xs text-white/40 font-['Rajdhani']">
-                    <p>Dewa Agung Yogie <span className="text-blue-400">Novian</span></p>
+                    <p>Dewa Agung YOGIE <span className="text-blue-400">Novian</span></p>
                     <p>Product Engineering & R&D</p>
                   </div>
                 </motion.div>

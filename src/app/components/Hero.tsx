@@ -38,7 +38,7 @@ export const Hero = () => {
             </p>
             <h1 className="text-6xl sm:text-7xl md:text-8xl lg:text-[110px] xl:text-[130px] font-black leading-[0.85] tracking-tighter uppercase">
               <span className="block mb-2 sm:mb-4">Dewa Agung</span>
-              <span className="block mb-2 sm:mb-4">Yogie</span>
+              <span className="block mb-2 sm:mb-4">YOGIE</span>
               <span className="block text-blue-400">Novian</span>
             </h1>
           </motion.div>
