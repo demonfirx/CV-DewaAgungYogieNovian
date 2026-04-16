@@ -69,9 +69,14 @@ export const Hero = () => {
                 <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
               </a>
               <div className="flex gap-2">
-                <button className="flex items-center justify-center w-12 h-12 bg-white/5 rounded-full hover:bg-white/10 transition-colors border border-white/10 group" aria-label="Download CV">
+                <a
+                  href="/Dewa-Agung-Yogie-Novian-CV.pdf"
+                  download="Dewa-Agung-Yogie-Novian-CV.pdf"
+                  className="flex items-center justify-center w-12 h-12 bg-white/5 rounded-full hover:bg-white/10 transition-colors border border-white/10 group"
+                  aria-label="Download CV"
+                >
                   <Download className="w-4 h-4 text-white group-hover:scale-110 transition-transform" />
-                </button>
+                </a>
                 <a href="#contact" className="flex items-center justify-center w-12 h-12 bg-white/5 rounded-full hover:bg-white/10 transition-colors border border-white/10 group" aria-label="Contact Me">
                   <Mail className="w-4 h-4 text-white group-hover:scale-110 transition-transform" />
                 </a>
