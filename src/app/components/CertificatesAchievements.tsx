@@ -1,13 +1,12 @@
 import React from 'react';
 import { motion } from 'motion/react';
 import { Award, TrendingUp, CheckCircle2, Zap, Target, ExternalLink } from 'lucide-react';
-import { ImageWithFallback } from './figma/ImageWithFallback';
-import siemensCert from 'figma:asset/ALL_CERTIFICATE_page-0004.jpg';
-import autodesk1 from 'figma:asset/003.AutoDesk.jpg';
-import autodesk2 from 'figma:asset/005,AutoDesk.jpg';
-import iso9001 from 'figma:asset/002.ISO9001.jpg';
-import gemilang from 'figma:asset/001.GemilangTraining.jpg';
-import toefl from 'figma:asset/006TOEFL_ITP.jpg';
+const siemensCert = '/certificates/ALL_CERTIFICATE_page-0004.jpg';
+const autodesk1 = '/certificates/003.AutoDesk.jpg';
+const autodesk2 = '/certificates/005.AutoDesk_Inventor.jpg';
+const iso9001 = '/certificates/002.ISO9001.jpg';
+const gemilang = '/certificates/001.GemilangTraining.jpg';
+const toefl = '/certificates/006TOEFL_ITP.jpg';
 
 const certificates = [
   {
@@ -148,7 +147,7 @@ export const CertificatesAchievements = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
             {achievements.map((item, idx) => (
               <motion.div
-                key={idx}
+                key={`${item.year}-${item.category}`}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: "-100px" }}
@@ -236,7 +235,7 @@ export const CertificatesAchievements = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {certificates.map((cert, idx) => (
               <motion.a
-                key={idx}
+                key={cert.title}
                 href={cert.url}
                 target="_blank"
                 rel="noopener noreferrer"
